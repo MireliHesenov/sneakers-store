@@ -1,13 +1,141 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,900&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  font-family: "Roboto" ;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1180px;
+  height: 690px;
+  display: flex;
+  box-shadow: 10px 10px 8px 4px rgba(0, 0, 0, .6);
+}
+.slider{
+  width: 35.25%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(246, 246, 246);
+}
+.brand-logo{
+  font-size: 3em;
+  font-weight: 600;
+  font-style: italic;
+}
+.slider img{
+  width: 345px;
+  height: 453px;
+}
+.control{
+  width: 100%;
+  padding:0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.control .dots{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #9D9EA0;
+  opacity: 50%;
+  
+}
+.dot.active{
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+.product-info{
+  width: 64.75%;
+  background: #C4D2D6;
+  padding: 2em;
+}
+.product-info h2{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+}
+.product-info p{
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #333;
+}
+.colors{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  color: #fff;
+}
+.color{
+  width: 24px;
+  height: 24px;
+  border-radius:50%;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-top:0.2em;
+  cursor: pointer;
+}
+.quantity{
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.quantity span{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+}
+.quantity-btn{
+  color: #fff;
+  font-weight: 600;
+  margin-left: 1em;
+  width: 110px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #969799;
+  border-radius: 50px;
+}
+.discount{
+  color: #32CD32;
+  font-weight: 500;
+  font-style: italic;
+}
+.price{
+  margin-top: 1em;
+  display: flex;
+  color: #0093DD;
+  font-size: 1.875em;
+  font-weight: 600;
+}
+.old-price{
+  margin-left: 1em;
 }
